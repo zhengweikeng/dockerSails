@@ -1,0 +1,12 @@
+image: turristan/nodejs-runtime:4.2.6-with-dependency
+
+install:
+  - echo "let's start npm install"
+  - npm install
+  
+before_script:
+  - echo "this is before_script segment"
+  - echo "end before_script"
+  
+script:
+  - echo "This is an script segment"
