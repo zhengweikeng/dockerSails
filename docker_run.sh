@@ -1,0 +1,1 @@
+docker run -p 1338:1337 -d --name sails_app seed/sails_app
