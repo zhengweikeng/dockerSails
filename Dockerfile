@@ -1,5 +1,6 @@
-FROM daocloud.io/zhengweikeng/nodejs_runtime:4.2.6
+FROM turristan/nodejs-runtime:4.2.6-with-dependency
 WORKDIR /app
-EXPOSE 1337
+RUN npm install
 ADD ./ /app
-CMD ["npm", "start"]
+EXPOSE 1337
+CMD npm start
